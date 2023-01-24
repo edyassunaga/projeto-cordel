@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Caveat', cursive;
+    --font3: 'Bebas Neue', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+header{
+    min-height: 150px;
+    padding-top: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+header > h1{
+    font-family:var(--font3);
+    font-size: 10vw;
+    color: white;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+section{
+    font-weight: bold;
+    font-size: 4.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+section.imagem > p{
+    padding: 5px;
+    display: inline-block;
+    background-color: rgb(32, 32, 32);
+    width: 400px;
+}
+
+header > p {
+    color: white;
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
